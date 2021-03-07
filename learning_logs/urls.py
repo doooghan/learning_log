@@ -4,8 +4,11 @@ from django.conf.urls import url
 
 from . import views
 
-app_name = "learning_log"
+app_name = "learning_logs"
 urlpatterns = [
     # 主页
-    url("", views.index, name='index')
+    url(r'^$', views.index, name='index'),
+
+    # 显示所有的主题
+    url(r'^topics/$', views.topics, name='topics'),
 ]

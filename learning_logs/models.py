@@ -1,5 +1,7 @@
 from django.db import models
 
+# 在这里创建模型
+
 
 class Topic(models.Model):
     """用户学习的主题"""
